@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1001363479441",
+    "project_id": "vehicle-app-client",
+    "storage_bucket": "vehicle-app-client.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001363479441:android:e656187556d49df7ebd830",
+        "android_client_info": {
+          "package_name": "com.example.vehicleappclient"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhdCbM5j139qy1W8xiN-1KK-uxYOtx7dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

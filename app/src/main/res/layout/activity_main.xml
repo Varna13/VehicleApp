@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivVehicle"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/vehicleimage"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/etVehicleNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:hint="Enter Vehicle Number"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="@color/lightBlue"
+        android:background="@drawable/border_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivVehicle"/>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:backgroundTint="@color/lightBlue"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etVehicleNumber"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSearch">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:layout_margin="12dp">
+                
+                <TextView
+                    android:id="@+id/tvOwnerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Owner Name:"
+                    android:textColor="@color/lightBlue"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tvReadOwnerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/lightBlue"
+                    android:textSize="18sp"/>
+
+                
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/lightBlue"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:layout_margin="12dp">
+
+                <TextView
+                    android:id="@+id/tvVehicleBrand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vehicle Brand:"
+                    android:textColor="@color/lightBlue"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tvReadVehicleBrand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/lightBlue"
+                    android:textSize="18sp"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/lightBlue"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:layout_margin="12dp">
+
+                <TextView
+                    android:id="@+id/tvVechicleRTO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vechicle RTO:"
+                    android:textColor="@color/lightBlue"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tvReadVechicleRTO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/lightBlue"
+                    android:textSize="18sp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

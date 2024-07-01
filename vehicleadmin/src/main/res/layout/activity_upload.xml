@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity"
+    android:background="@color/blue">
+
+
+    <EditText
+        android:id="@+id/etOwnerName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:hint="Enter Owner Name"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="@color/lightBlue"
+        android:background="@drawable/border_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/etVehicleBrand"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:hint="Enter Vehicle Brand"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="@color/lightBlue"
+        android:background="@drawable/border_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etOwnerName"/>
+
+    <EditText
+        android:id="@+id/etVehicleRTO"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:hint="Enter Vehicle RTO"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="@color/lightBlue"
+        android:background="@drawable/border_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etVehicleBrand"/>
+
+    <EditText
+        android:id="@+id/etVehicleNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:hint="Enter Vehicle Number"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="@color/lightBlue"
+        android:background="@drawable/border_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etVehicleRTO"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:paddingStart="14dp"
+        android:text="SAVE"
+        android:textColor="@color/blue"
+        android:paddingEnd="14dp"
+        android:backgroundTint="@color/lightBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etVehicleNumber"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
